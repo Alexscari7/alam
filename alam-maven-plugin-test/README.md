@@ -1,0 +1,1 @@
+run `mvn clean alam:run -pl alam-maven-plugin-test` to package and run project.

@@ -1,0 +1,1 @@
+run `mvn clean install -pl alam-maven-plugin` to install plugin to local repository.
