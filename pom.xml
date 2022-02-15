@@ -11,13 +11,6 @@
 
     <description>simple maven plugin</description>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <maven.compiler.compilerVersion>8</maven.compiler.compilerVersion>
-    </properties>
-
     <modules>
         <module>alam-maven-plugin</module>
         <module>alam-maven-plugin-test</module>
