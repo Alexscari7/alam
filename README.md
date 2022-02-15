@@ -1,1 +1,2 @@
 # alam
+simple maven plugin
