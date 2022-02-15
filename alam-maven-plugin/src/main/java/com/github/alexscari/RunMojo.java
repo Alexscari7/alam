@@ -14,7 +14,7 @@ import java.io.InputStreamReader;
 @Execute(phase = LifecyclePhase.PACKAGE)
 public class RunMojo extends AbstractMojo {
 
-    @Parameter(defaultValue = "${project.build.directory}\\${project.artifactId}-${project.version}.jar")
+    @Parameter(defaultValue = "${project.build.directory}${file.separator}${project.artifactId}-${project.version}.jar")
     private String jarPath;
 
     @Override
