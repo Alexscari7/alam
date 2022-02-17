@@ -17,7 +17,28 @@
     </properties>
 
     <build>
+        <resources>
+            <resource>
+                <directory>${project.basedir}/src/main/resources</directory>
+                <!-- 对指定目录下的资源开启动态替换配置 -->
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
         <plugins>
+
+            <!-- 使用自定义占位符 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <useDefaultDelimiters>false</useDefaultDelimiters>
+                    <delimiters>
+                        <delimiter>$</delimiter>
+                    </delimiters>
+                </configuration>
+            </plugin>
 
             <!-- 将项目依赖一起打入包中 -->
             <plugin>
